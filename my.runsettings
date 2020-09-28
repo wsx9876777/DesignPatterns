@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RunSettings>
+  <TestRunParameters>
+    <Parameter name="JsonUrl" value="D:\LinkedinLearning\DesignPatten\DesginPattern\RepositoryTest\appsettings.Development.json"></Parameter>
+  </TestRunParameters>
+</RunSettings>

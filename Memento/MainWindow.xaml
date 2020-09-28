@@ -1,0 +1,17 @@
+﻿<Window x:Class="Memento.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Memento"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button Content="Save" HorizontalAlignment="Left" Margin="184,317,0,0" VerticalAlignment="Top" Click="Save_Click"/>
+        <Button Content="Redo" HorizontalAlignment="Left" Margin="285,317,0,0" VerticalAlignment="Top" Click="Redo_Click"/>
+        <Button Content="Undo" HorizontalAlignment="Center" Margin="0,317,0,0" VerticalAlignment="Top" Click="Undo_Click"/>
+        <TextBox Name="TextBox1" HorizontalAlignment="Left" Margin="199,241,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Name="label" Content="Label" HorizontalAlignment="Left" Margin="214,207,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
