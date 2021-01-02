@@ -5,17 +5,18 @@ using System.Text;
 
 namespace Bridge.Concrete
 {
-    class ExchangeSender : MessageSender
+    class ExchangeSender : IMessageSender
     {
-        public ExchangeSender(string ip, int port) : base(ip, port) { }
-        public override void Conn()
+
+
+        public void Conn(string ip,int port)
         {
-            Console.WriteLine($"Conn ExchangeServer {Ip} {Port}");
+            Console.WriteLine($"ExchangeSender Conn {ip}:{port}");
         }
 
-        public override void send(Message message)
+        public void send(string msg)
         {
-            Console.WriteLine($"Send ExchangeServer message:{message.content}");
+            Console.WriteLine(msg);
         }
     }
 }

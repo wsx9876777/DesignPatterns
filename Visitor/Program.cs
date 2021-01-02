@@ -20,6 +20,7 @@ namespace Visitor
             ICarCostomer normalCostomer = new NormalCostomer();
             ICarCostomer vipCostomer = new VipCostomer();
             fastCarCollection.Accept(normalCostomer);
+           
             //fastCarCollection.Detach(bmw);
             fastCarCollection.Accept(vipCostomer);
 

@@ -7,16 +7,15 @@ namespace Bridge
     {
         static void Main(string[] args)
         {
-            var msg = new Message() {
-                Id=1,
-                content="Tommy Tommy 妳好帥"
-            };
-            var DeclareSender = new DeclareSender("127.0.0.1", 8080);
-            var ExchangeSender = new ExchangeSender("127.0.0.1", 80);
+            var msg = new MessageService();
+
+
+            var DeclareSender = new DeclareSender();
+            var ExchangeSender = new ExchangeSender();
             msg.Sender = DeclareSender;
-            msg.Send();
+            msg.Send("123");
             msg.Sender = ExchangeSender;
-            msg.Send();
+            msg.Send("321");
         }
     }
 }
